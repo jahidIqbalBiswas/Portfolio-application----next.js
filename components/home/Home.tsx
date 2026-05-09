@@ -1,5 +1,6 @@
+import Hero from "@/components/home/Hero";
 const Home = () => {
-  return <div className="overflow-hidden"></div>;
+  return <Hero />;
 };
 
 export default Home;
