@@ -1,3 +1,4 @@
+import { me } from "@/data/data";
 import { CodeSquareIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ const Logo = () => {
         <CodeSquareIcon className="text-white w-6 h-6" />
       </div>
       <h1 className="sm:text-xl hidden sm:block md:text-2xl text-green-600 dark:text-green-400 font-bold">
-        {"<JiB/>"}
+        {`<${me?.logoText}/>`}
       </h1>
     </Link>
   );

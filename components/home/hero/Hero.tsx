@@ -1,6 +1,6 @@
 import { me } from "@/data/data";
 import { Download, FolderOpen } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import AnimatedText from "./AnimatedText";
 const Hero = () => {
   return (

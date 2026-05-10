@@ -21,7 +21,7 @@ const Nav = ({ openMobileNav }) => {
   }, []);
   return (
     <div
-      className={`transition-all ${navBG ? "dark:bg-gray-900 bg-white shadow-md " : ""} duration-300 h-[10vh] fixed z-100 w-full`}
+      className={`transition-all ${navBG ? "backdrop-blur shadow-md " : ""} duration-300 h-[10vh] fixed z-100 w-full`}
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}

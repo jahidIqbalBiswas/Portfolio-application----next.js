@@ -21,20 +21,21 @@ import {
 
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 export const me = {
+  logoText: "JiB",
   name: "Jahid Iqbal Biswas",
 };
 export const stats = [
-  { label: "Years Experience", value: "5+" },
+  { label: "Years Experience", value: "6+" },
   { label: "Projects Completed", value: "50+" },
   { label: "Happy Clients", value: "30+" },
   { label: "Students Taught", value: "1000+" },
 ];
 
 export const highlights = [
-  { icon: MapPin, text: "Based in San Francisco, CA" },
+  { icon: MapPin, text: "Based in Barishal, Bangladesh" },
   { icon: Briefcase, text: "Open for freelance work" },
-  { icon: GraduationCap, text: "CS Graduate from Stanford" },
-  { icon: Coffee, text: "Powered by coffee & curiosity" },
+  { icon: GraduationCap, text: "CST holder from BTEB" },
+  { icon: Coffee, text: "Inspired by coffee & curiosity" },
 ];
 
 export const userReviewData = [
