@@ -101,7 +101,7 @@ const ProjectCard = ({
           <Button
             size="sm"
             asChild
-            className="w-full bg-green-600 hover:bg-green-700 text-white shadow-lg shadow-green-500/20"
+            className="w-full bg-green-600 hover:bg-green-700! text-white shadow-lg shadow-green-500/20"
           >
             <a
               href={demoUrl}
