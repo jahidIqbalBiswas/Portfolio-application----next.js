@@ -2,11 +2,13 @@ import Image from "next/image";
 import { FaQuoteRight, FaStar } from "react-icons/fa";
 
 type Props = {
-  id: number;
-  name: string;
-  profession: string;
-  userImage: string;
-  review: string;
+  user: {
+    id: number;
+    name: string;
+    profession: string;
+    userImage: string;
+    review: string;
+  };
 };
 
 const ReviewCard = ({ user }: Props) => {
