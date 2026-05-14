@@ -10,12 +10,12 @@ const MobileNav = ({ mobileNav, closeMobileNav }) => {
       {/* overlay */}
       <div
         onClick={closeMobileNav}
-        className={`${sidebarOpenClose} fixed inset-0 transform transition-all duration-500 z-1002 bg-black/10 backdrop-blur w-full h-screen`}
+        className={`${sidebarOpenClose} fixed inset-0 transform transition-all duration-500 z-999999 bg-black/10 backdrop-blur w-full h-screen`}
       ></div>
 
       {/* navlinks */}
       <div
-        className={` ${sidebarOpenClose} text-white fixed justify-center flex backdrop-blur-3xl flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] z-1002 shadow-xl`}
+        className={` ${sidebarOpenClose} text-white fixed justify-center flex backdrop-blur-3xl flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] z-9999999 shadow-xl`}
       >
         {navLinks.map((link, index) => {
           return (
