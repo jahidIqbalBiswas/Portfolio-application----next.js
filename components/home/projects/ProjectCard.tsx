@@ -23,7 +23,7 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <div className="group relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-green-500/10 hover:border-green-500/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]">
-      {/* ইমেজ সেকশন */}
+      {/* Image section */}
       <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={image}
@@ -31,7 +31,7 @@ const ProjectCard = ({
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        {/* হোভার ওভারলে */}
+        {/* Hover Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
           {githubUrl && (
             <a
@@ -56,7 +56,7 @@ const ProjectCard = ({
         </div>
       </div>
 
-      {/* কন্টেন্ট সেকশন */}
+      {/* Content */}
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
           {title}
@@ -64,8 +64,7 @@ const ProjectCard = ({
         <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
           {description}
         </p>
-
-        {/* টেক স্ট্যাক ট্যাগস */}
+        {/* TechStacks */}
         <div className="flex flex-wrap gap-2">
           {techStack.map((tech) => (
             <span

@@ -1,7 +1,7 @@
 import SectionHeading from "@/components/helpers/SectionHeading";
 import { highlights, stats } from "@/data/data";
+import myPic from "@/public/images/jib-green-best.png";
 import Image from "next/image";
-
 const About = () => {
   return (
     <div className="py-16 bg-gray-100 dark:bg-gray-900">
@@ -17,10 +17,12 @@ const About = () => {
 
           <div className="aspect-auto rounded-2xl overflow-hidden p-2 bg-white/10 dark:bg-black/20 backdrop-blur-sm border border-green-500/20">
             <Image
-              src={"/images/jib-green-best.png"}
+              src={myPic}
               alt="profile"
               width={700}
               height={700}
+              preload={true}
+              placeholder="blur"
               className="w-full h-full object-cover rounded-xl hover:grayscale-50 transition-all duration-500"
             />
           </div>
