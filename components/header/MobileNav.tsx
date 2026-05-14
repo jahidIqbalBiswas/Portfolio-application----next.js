@@ -2,11 +2,11 @@ import { navLinks } from "@/constants/constant";
 import { X } from "lucide-react";
 import Link from "next/link";
 import Logo from "./../helpers/Logo";
-interface MobileNavProps {
+type Props = {
   mobileNav: boolean;
   closeMobileNav: () => void;
-}
-const MobileNav = ({ mobileNav, closeMobileNav }: MobileNavProps) => {
+};
+const MobileNav = ({ mobileNav, closeMobileNav }: Props) => {
   const sidebarOpenClose = mobileNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
     <div>
