@@ -5,8 +5,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Logo from "../helpers/Logo";
 import ThemeToggler from "./../helpers/ThemeToggler";
-
-const Nav = ({ openMobileNav }) => {
+type Props = {
+  openMobileNav: () => void;
+};
+const Nav = ({ openMobileNav }: Props) => {
   const [navBG, setNavBG] = useState(false);
   useEffect(() => {
     function handler() {
