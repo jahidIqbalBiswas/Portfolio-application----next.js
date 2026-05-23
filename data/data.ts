@@ -19,7 +19,13 @@ import {
   Terminal,
 } from "lucide-react";
 
-import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa6";
 export const me = {
   logoText: "JiB",
   name: "Jahid Iqbal Biswas",
@@ -77,74 +83,86 @@ export const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@johndoe.dev",
-    href: "mailto:hello@johndoe.dev",
+    value: "developer.jahidbiswas@gmail.com",
+    href: "mailto:developer.jahidbiswas@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+8801576772499",
+    href: "tel:+8801576772499",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Barishal, Bangladesh",
     href: "#",
   },
 ];
 
 export const socialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
+  {
+    icon: FaGithub,
+    href: "https://github.com/jahidIqbalBiswas",
+    label: "GitHub",
+  },
+  {
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/in/jahidiqbalbiswas",
+    label: "LinkedIn",
+  },
+  { icon: FaTwitter, href: "https://x.com/jahidIBiswas", label: "Twitter" },
+  {
+    icon: FaFacebook,
+    href: "https://www.facebook.com/biswas.fb",
+    label: "Facebook",
+  },
 ];
 
 export const experiences = [
   {
     type: "work",
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp Inc.",
-    period: "2022 - Present",
+    title: "Full Stack Developer",
+    company: "Codecanit Inc.",
+    period: "2025 - Present",
     description:
       "Leading development of enterprise SaaS products. Mentoring junior developers and implementing best practices.",
     technologies: ["React", "Node.js", "AWS", "TypeScript"],
   },
   {
     type: "work",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2022",
+    title: "Frontend Developer",
+    company: "Entavirr",
+    period: "2022 - 2023",
     description:
       "Built and maintained multiple web applications. Collaborated with design team to implement responsive UIs.",
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
+    technologies: ["React.js", "Next.js", "MongoDB", "Node.js"],
   },
   {
     type: "education",
-    title: "Master of Computer Science",
-    company: "Stanford University",
-    period: "2018 - 2020",
-    description:
-      "Specialized in distributed systems and machine learning. Thesis on scalable microservices architecture.",
-    technologies: ["Research", "AI/ML", "Distributed Systems"],
-  },
-  {
-    type: "work",
-    title: "Junior Developer",
-    company: "WebAgency Co.",
-    period: "2018 - 2020",
-    description:
-      "Developed client websites and e-commerce platforms. Gained experience in agile methodologies.",
-    technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
+    title: "Honours in Political Science",
+    company: "National University",
+    period: "ongoing",
+    description: "Academic education",
+    technologies: ["Academic", "P. Science", "Distributed Systems"],
   },
   {
     type: "education",
-    title: "Bachelor of Computer Science",
-    company: "UC Berkeley",
-    period: "2014 - 2018",
+    title: "Computer Science Engineering Technology (CST)",
+    company: "BTEB, BD",
+    period: "2021 - 2022",
     description:
       "Strong foundation in algorithms, data structures, and software engineering principles.",
     technologies: ["Computer Science", "Mathematics", "Problem Solving"],
+  },
+  {
+    type: "education",
+    title: "Web Design and Development",
+    company: "Self Learning",
+    period: "2020",
+    description:
+      "Developed client websites and e-commerce platforms. Gained experience in agile methodologies.",
+    technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
   },
 ];
 
@@ -156,6 +174,15 @@ export const footerSocialLinks = [
 ];
 
 export const projects = [
+  {
+    title: "Industrial & Construction Management Platform",
+    description:
+      "A robust and highly responsive web application designed for construction firms, featuring project showcases, service modules, and a clean user interface for professional brand representation.",
+    image: "/images/brigate.png",
+    techStack: ["Next.js", "Tailwind CSS", "TypeScript", "Appwrite"],
+    demoUrl: "https://brigate.netlify.app",
+    githubUrl: "https://github.com/your-repo",
+  },
   {
     title: "E-Commerce Platform",
     description:

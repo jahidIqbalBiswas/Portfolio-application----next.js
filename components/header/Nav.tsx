@@ -12,7 +12,7 @@ const Nav = ({ openMobileNav }: Props) => {
   const [navBG, setNavBG] = useState(false);
   useEffect(() => {
     function handler() {
-      if (window.scrollY >= 250) {
+      if (window.scrollY >= 90) {
         setNavBG(true);
       } else {
         setNavBG(false);
@@ -51,7 +51,9 @@ const Nav = ({ openMobileNav }: Props) => {
           >
             <span className="relative z-20 flex items-center space-x-2 text-sm">
               <Download className="w-4 h-4" />
-              <span>Download CV</span>
+              <span>
+                <span className="max-[350px]:hidden">Download</span> CV
+              </span>
             </span>
           </a>
           {/* Theme Toggler */}

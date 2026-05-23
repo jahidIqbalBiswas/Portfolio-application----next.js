@@ -80,7 +80,7 @@ const Contact = () => {
             </div>
           </div>
           {/* contact form container */}
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-3xl border border-green-500/10 dark:border-green-500/5 shadow-xl transition-colors duration-300">
+          <div className="bg-white dark:bg-gray-900 p-5 sm:p-8 rounded-3xl border border-green-500/10 dark:border-green-500/5 shadow-xl transition-colors duration-300">
             <form className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 {/* Name Input */}
@@ -91,7 +91,7 @@ const Contact = () => {
                   <Input
                     id="name"
                     placeholder="John Smith"
-                    className="bg-gray-100 dark:bg-gray-800 border dark:border-none text-foreground h-12 px-4 focus-visible:ring-2 focus-visible:ring-green-500 transition-all placeholder:text-muted-foreground"
+                    className="bg-gray-100 dark:bg-gray-800 border dark:border-none text-foreground  h-10 sm:h-12 px-4 focus-visible:ring-2 focus-visible:ring-green-500 transition-all placeholder:text-muted-foreground"
                   />
                 </div>
 
@@ -104,7 +104,7 @@ const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="john@example.com"
-                    className="bg-gray-100 dark:bg-gray-800 border dark:border-none text-foreground h-12 px-4 focus-visible:ring-2 focus-visible:ring-green-500 transition-all placeholder:text-muted-foreground"
+                    className="bg-gray-100 dark:bg-gray-800 border dark:border-none text-foreground h-10 sm:h-12 px-4 focus-visible:ring-2 focus-visible:ring-green-500 transition-all placeholder:text-muted-foreground"
                   />
                 </div>
               </div>
@@ -117,7 +117,7 @@ const Contact = () => {
                 <Input
                   id="subject"
                   placeholder="Project Inquiry"
-                  className="bg-gray-100 dark:bg-gray-800 border dark:border-none text-foreground h-12 px-4 focus-visible:ring-2 focus-visible:ring-green-500 transition-all placeholder:text-muted-foreground"
+                  className="bg-gray-100 dark:bg-gray-800 border dark:border-none text-foreground  h-10 sm:h-12 px-4 focus-visible:ring-2 focus-visible:ring-green-500 transition-all placeholder:text-muted-foreground"
                 />
               </div>
 
@@ -135,7 +135,7 @@ const Contact = () => {
 
               {/* Green Theme Submit Button */}
               <div className="pt-2">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold h-12 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-green-500/20 transition-all">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold  h-10 sm:h-12 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-green-500/20 transition-all">
                   <Send className="w-5 h-5" />
                   Send Message
                 </Button>
